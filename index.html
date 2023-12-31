@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+ .firework {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: explode 1s infinite;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  background: #f00; /* Change the color for different fireworks */
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  background: rgb(6, 245, 58); /* Change the color for different fireworks */
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background: rgb(6, 183, 241); /* Change the color for different fireworks */
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background: rgb(235, 112, 5); /* Change the color for different fireworks */
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+img{
+            padding-left:475px;
+            padding-top: 5px;
+           justify-content: center;
+        }
+        .heading{
+            color:rgb(245, 198, 128);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="firework top-left"></div>
+<div class="firework top-right"></div>
+<div class="firework bottom-left"></div>
+<div class="firework bottom-right"></div>
+
+<div class="heading">
+    <h1>Happy New Year!</h1>
+</div>
+
+<img src="Happy New Year wishes.png" width="300px" height="400px">
+</body>
+
+</html>
